@@ -1,0 +1,40 @@
+var myExtension = {
+  openTab: function(event) {
+	var toOpen=document.getElementById("log-textbox").value;
+	var splitStrings = new Array();
+splitStrings = toOpen.split(' ');
+if(splitStrings[0] == 'google')
+openUILinkIn('http://www.google.co.in/#q='+splitStrings[1]+splitStrings[2]+'&bih=524&biw=1013&fp=b3c9f3f4cff6fa77&hl=en','tab',event);
+
+if(splitStrings [0] == 'wiki')
+	openUILinkIn('http://en.wikipedia.org/wiki/'+splitStrings[1],"tab",event);
+
+ 
+	document.getElementById("log-panel").hidePopup();
+	document.getElementById("log-textbox").value="";
+  }
+}
+
+function show_pop()
+{
+var iHeight= window.screen.height;
+var iWidth= window.screen.width;
+//alert("height is" + iHeight);
+//alert("height is" + iWidth);
+document.getElementById('log-textbox').value=''; 
+document.getElementById('log-panel').openPopupAtScreen((iWidth/2)-200 , iHeight/2 ,false);
+}
+
+function auto_complete()
+{  
+var splitStrings=document.getElementById("log-panel");
+var str1=document.getElementById("log-textbox").value;
+//var str2=
+
+
+
+if(splitStrings.state=='open')
+	myExtension.openTab();
+
+
+}

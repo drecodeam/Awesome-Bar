@@ -1,0 +1,6 @@
+content  AwesomeBar         chrome/content/
+locale   AwesomeBar  en-US  chrome/locale/en-US/
+
+overlay  chrome://browser/content/browser.xul chrome://AwesomeBar/content/browser.xul
+
+

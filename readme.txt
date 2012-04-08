@@ -1,0 +1,1 @@
+A simple firefox add-on that puts allows you to enter commands and execute redundant tasks from the popup box. 

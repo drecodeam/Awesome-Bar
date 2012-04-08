@@ -1,0 +1,27 @@
+/*#log-panel
+{
+
+-moz-border-radius: 1em;
+-moz-opacity: 0.3;
+-moz-appearance: none;
+}
+
+
+#log-textbox {
+font-family: georgia,arial,sans-serif;
+font-size: 15px;
+-moz-border-radius: 1em;
+-moz-opacity: 0.7;
+-moz-appearance: none;
+}*/
+
+#log-text{
+color:#efecec;
+font-family: georgia,arial,sans-serif;
+font-size: 10px;
+}
+#log-text1{
+color:#efecec;
+font-family: georgia,arial,sans-serif;
+font-size: 10px;
+}

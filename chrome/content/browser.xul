@@ -1,0 +1,72 @@
+<?xml-stylesheet href="chrome://AwesomeBar/content/sample_style.css" type="text/css"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script src="test.js"/>
+<vbox>
+<panel id="log-panel" width="400"  onpopupshown="document.getElementById('log-textbox').focus()" >
+
+<label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+ <textbox type="search" searchbutton="true" id="log-textbox" hidden="false" opacity="0.1" placeholder="Enter command here" oncommand="minify()" />
+
+<label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+</panel>
+
+<panel id="mailPanel" width="400"  onpopupshown="document.getElementById('mailTo').focus()" >
+
+ <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+
+ <textbox type="text"  id="mailTo" hidden="false" opacity="0.1" placeholder="Enter Email ID here"  />
+
+ <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+ 
+ <textbox type="text"  id="mailSub" hidden="false" opacity="0.1" placeholder="Enter Email Subject here"  />
+
+ <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+ <textbox type="text"  id="mailBody" hidden="false" opacity="0.1" placeholder="Enter Email Body here"  />
+ 
+  <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+ <button label="Send Mail" oncommand="sendMail()"/>
+
+
+</panel>
+
+
+
+<panel id="flightPanel" width="400"  onpopupshown="document.getElementById('flightFrom').focus()" >
+
+ <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+ <textbox type="text"  id="flightFrom" hidden="false" opacity="0.1" placeholder="Enter Source Station here"  />
+
+ <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+ 
+ <textbox type="text"  id="flightTo" hidden="false" opacity="0.1" placeholder="Enter Destination Station here"  />
+
+ <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+ <textbox type="text"  id="flightDate" hidden="false" opacity="0.1" placeholder="Enter Journey Date here"  />
+ 
+  <label id="log-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dolor velit, iaculis eget,. </label>
+
+ <button label="Search Flights" oncommand="searchFlights()"/>
+
+
+</panel>
+
+
+
+</vbox>
+
+<keyset>
+  <key id="openKey" modifiers="alt" key="L"
+    oncommand="show_pop();"/>
+
+<key id="autocomplete" modifiers="control" keycode="VK_RETURN"
+    oncommand="auto_complete();"/>
+</keyset>
+
+</overlay>
